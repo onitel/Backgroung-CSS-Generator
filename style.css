@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #33ccff, #ff99cc);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Text style */
+h1, h2 {
+    cursor: default;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Buttons style */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 3px ;
+    font-size: 15px;
+    background: rgb(0, 180, 240);
+    font-family:'Roboto',sans-serif;
+}
+
+button:hover {
+    background: rgb(119, 243, 243);
+    transition: all 0.2s;
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    box-shadow: inset 0px 0px 14px -9px rgba(0,0,0,0.75);
+    transition: all 0.2s;
+}
+
+/* Input style */
+input[type="color"] {
+    -webkit-appearance: none;
+    padding: 0px;
+    height: 35px;
+    width: 55px;
+    border-radius: 5px;
+    background: opacity(0.2);
+    background-color: rgb(119, 243, 243, 0.2);
+}
+
+input:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:active {
+    transition: all 0.2s;
+    box-shadow: inset 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
