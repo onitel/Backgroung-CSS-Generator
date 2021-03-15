@@ -89,13 +89,22 @@ function getRandomGradient() {
 	css.textContent = "background: " + randomGradient + ";";
 }
 
+// is reversing the colors from color input
 function getReverseColorsA() {
     body.style.background = direction + color2.value + "," + color1.value + ")";
     css.textContent = "background: " + body.style.background + ";";
+    var col1 = color1.value;
+    var col2 = color2.value;
+    color2.value = col1;
+    color1.value = col2;
     rev = true;
 }
 
 function getReverseColorsB() {
+    var col1 = color1.value;
+    var col2 = color2.value;
+    color2.value = col1;
+    color1.value = col2;
     body.style.background = direction + color1.value + "," + color2.value + ")";
     css.textContent = "background: " + body.style.background + ";";
     rev = false;
