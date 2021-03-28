@@ -15,6 +15,20 @@ var reverseBtn = document.getElementById("reverse");
 
 gradientHor(); // initial state when starting the website
 
+// to coppy text on click
+css.onclick = function() {
+  document.execCommand("copy");
+}
+
+css.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", css.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
+
+// Vertical gradient 
 function gradientVer() {
     direction = "linear-gradient(to right,"; //value of direction is "linear-gradient(" when gradientVer() is ran.
   
@@ -28,6 +42,7 @@ function gradientVer() {
     css.textContent = "background: " + body.style.background + ";";
 }
 
+// Orizontal gradient
 function gradientHor() {
     direction = "linear-gradient("; //value of direction is "linear-gradient(to right," when gradientHor() is ran.
     body.style.background = 
@@ -40,6 +55,7 @@ function gradientHor() {
     css.textContent = "background: " + body.style.background + ";";
 }
 
+// Radial Gradient
 function gradientRad() {
     direction = "radial-gradient("; //value of direction is "radial-gradient" when gradientRad() is ran.
     body.style.background = 
