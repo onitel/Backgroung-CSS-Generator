@@ -18,7 +18,7 @@ gradientHor(); // initial state when starting the website
 // to coppy text on click
 css.onclick = function() {
   document.execCommand("copy");
-  alert("Copied the text: " + css.value);
+  alert("Copied the text: " + css.textContent);
 }
 
 css.addEventListener("copy", function(event) {
