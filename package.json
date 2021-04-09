@@ -1,0 +1,19 @@
+{
+  "name": "backgroung-css-generator",
+  "version": "1.0.0",
+  "description": "It.s a simple CSS code generator for background",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onitel/Backgroung-CSS-Generator.git"
+  },
+  "author": "Catalin Babalau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onitel/Backgroung-CSS-Generator/issues"
+  },
+  "homepage": "https://github.com/onitel/Backgroung-CSS-Generator#readme"
+}
