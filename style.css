@@ -37,6 +37,13 @@ button {
     font-family:'Roboto',sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 button:hover {
     background: rgb(119, 243, 243);
     transition: all 0.2s;
